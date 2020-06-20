@@ -1,0 +1,104 @@
+<body>
+
+  <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <a class="navbar-brand" href="#">Casa Automatica</a>
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent"
+      aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarSupportedContent">
+      <ul class="navbar-nav mr-auto">
+        <li class="nav-item active">
+          <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Login</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="#">Registro</a>
+        </li>
+      </ul>
+      <div class="ml-auto">
+        <p class="text-light my-auto">Valor final: R$<span id="valorFinal">0</span>,00</p>
+      </div>
+
+
+    </div>
+  </nav>
+  {{!-- Fim Nav --}}
+
+  <div class="container-fluid mt-4">
+    <div class="card-group">
+      <div class="card">
+        <img src="./img/alexa_show.png" style="width: 200px;" class="img-fluid card-img-top mx-auto" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Alexa Show 5</h5>
+          <p class="card-text">R$<span id="precoUm">474</span>,00</p>
+          <p>Quatidade : <span id="qtdeUm">0</span></p>
+          <button id="adicionarUm" class="btn btn-success">Adicionar</button>
+          <button id="removerUm" class="btn btn-danger">Remover</button>
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/lampada_wirles.jpg" style="width: 300px;" class="img-fluid card-img-top mx-auto" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Lâmpada Philips Hue</h5>
+          <p class="card-text">R$<span id="precoDois">341</span>,00</p>
+          <p>Quatidade : <span id="qtdeDois">0</span></p>
+          <button id="adicionarDois" class="btn btn-success">Adicionar</button>
+          <button id="removerDois" class="btn btn-danger">Remover</button>
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/tv.png" style="width: 150px;" class="img-fluid card-img-top mx-auto" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">TV Smart Samsung</h5>
+          <p class="card-text">R$<span id="precoTres">1519</span>,00</p>
+          <p>Quatidade : <span id="qtdeTres">0</span></p>
+          <button id="adicionarTres" class="btn btn-success">Adicionar</button>
+          <button id="removerTres" class="btn btn-danger">Remover</button>
+
+        </div>
+      </div>
+      <div class="card">
+        <img src="./img/aspirador.png" style="width: 100px;" class="img-fluid card-img-top mx-auto" alt="...">
+        <div class="card-body">
+          <h5 class="card-title">Aspirador Automatico</h5>
+          <p class="card-text">R$<span id="precoQuatro">499</span>,00</p>
+          <p>Quatidade : <span id="qtdeQuatro">0</span></p>
+          <button id="adicionarQuatro" class="btn btn-success">Adicionar</button>
+          <button id="removerQuatro" class="btn btn-danger">Remover</button>
+
+        </div>
+      </div>
+
+    </div>
+  </div>
+
+  <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
+    integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj"
+    crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+    integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+    crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"
+    integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI"
+    crossorigin="anonymous"></script>
+    <script src="./js/adicionar.js"></script>
+  <script src="./js/remover.js"></script>
+
+  <script>
+    adicionar(`Um`);
+    remover(`Um`)
+    adicionar(`Dois`);
+    remover(`Dois`);
+    adicionar(`Tres`);
+    remover(`Tres`);
+    adicionar(`Quatro`);
+    remover(`Quatro`);
+  </script>
+
+</body>
